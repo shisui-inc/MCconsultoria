@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC Asesorías — Expertos en Paraguay</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+  <link rel='icon' type='image/svg+xml' href='imag/ISOLOGOMILCIADES.svg'>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="40" height="40" stroke="#C9A84C" stroke-width="1"/>
+        <rect x="6" y="6" width="30" height="30" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+        <text x="21" y="28" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#C9A84C" text-anchor="middle">MC</text>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="mc">MC Asesorías</span>
+      <span class="asesorias">Paraguay · Expertos</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </li>
+    <li><a href="#contacto" class="nav-cta">Consultar Gratis</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <div class="geo-circle"></div>
+    <div class="geo-circle"></div>
+    <div class="geo-circle"></div>
+    <div class="diagonal"></div>
+    <div class="glow"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Tu puerta al Paraguay
+    </div>
+    <h1 class="hero-title">
+      Asesoría
+      <em class="line2">experta</em>
+      <span class="line3">en Paraguay.</span>
+    </h1>
+    <p class="hero-sub">
+      Contabilidad, trámites aduaneros y documentación oficial para extranjeros. 
+      Simplificamos el sistema paraguayo para que vos te concentres en lo que importa.
+    </p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">
+        Consulta Gratuita
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#servicios" class="btn-ghost">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Ver Servicios
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Clientes atendidos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Trámites distintos</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="brand-emblem">
+      <div class="emblem-outer"></div>
+      <div class="emblem-mid"></div>
+      <div class="emblem-inner">
+        <div class="emblem-center">
+          <span class="emblem-mc">MC</span>
+          <div class="emblem-divider"></div>
+          <span class="emblem-sub">Asesorías</span>
+        </div>
+      </div>
+      <!-- Floating cards -->
+      <div class="float-card">
+        <svg class="float-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <div class="float-card-title">RUC / RUE</div>
+        <div class="float-card-sub">Registro tributario</div>
+      </div>
+      <div class="float-card">
+        <svg class="float-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        <div class="float-card-title">Aduana</div>
+        <div class="float-card-sub">Importación/Exportación</div>
+      </div>
+      <div class="float-card">
+        <svg class="float-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+        <div class="float-card-title">Residencia</div>
+        <div class="float-card-sub">Trámite migratorio</div>
+      </div>
+      <!-- Paraguay flag -->
+      <div class="py-flag">
+        <div class="s"></div>
+        <div class="s"></div>
+        <div class="s"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-band">
+  <div class="ticker-track">
+    <div class="ticker-item">Contabilidad<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Trámites Aduaneros<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Residencia Permanente<span class="ticker-sep"></span></div>
+    <div class="ticker-item">RUC / RUE<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Importación & Exportación<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Declaración Jurada<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Habilitación Comercial<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Apostilla de Documentos<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Contabilidad<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Trámites Aduaneros<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Residencia Permanente<span class="ticker-sep"></span></div>
+    <div class="ticker-item">RUC / RUE<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Importación & Exportación<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Declaración Jurada<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Habilitación Comercial<span class="ticker-sep"></span></div>
+    <div class="ticker-item">Apostilla de Documentos<span class="ticker-sep"></span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="services-header">
+    <div>
+      <div class="section-tag reveal">Nuestros servicios</div>
+      <h2 class="section-title reveal reveal-delay-1">Todo lo que necesitás,<br><em>en un solo lugar.</em></h2>
+    </div>
+    <p class="services-intro reveal reveal-delay-2">
+      Desde la contabilidad diaria hasta los trámites más complejos ante organismos del Estado paraguayo. 
+      Atendemos a empresas, inversores y personas físicas extranjeras con precisión y confianza.
+    </p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M9 7h6m-6 0V5a2 2 0 012-2h2a2 2 0 012 2v2m0 0h3a2 2 0 012 2v3"/></svg>
+      </div>
+      <h3 class="service-title">Contabilidad General</h3>
+      <p class="service-desc">Gestión contable completa para empresas y profesionales independientes bajo normas NIIF y legislación paraguaya.</p>
+      <ul class="service-items">
+        <li>Registro de libros contables</li>
+        <li>Declaraciones impositivas SET</li>
+        <li>Balance general y estado de resultados</li>
+        <li>Asesoría tributaria IRACIS / IRAE</li>
+      </ul>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-num">02</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+      </div>
+      <h3 class="service-title">Trámites Aduaneros</h3>
+      <p class="service-desc">Asesoramiento integral en operaciones de comercio exterior: importación, exportación y regímenes especiales.</p>
+      <ul class="service-items">
+        <li>Despacho aduanero (DNA)</li>
+        <li>Importación bajo régimen de turista</li>
+        <li>Habilitación de despachante</li>
+        <li>Régimen de admisión temporaria</li>
+      </ul>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-num">03</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0"/></svg>
+      </div>
+      <h3 class="service-title">Documentación Paraguaya</h3>
+      <p class="service-desc">Tramitamos toda la documentación oficial para que extranjeros operen legalmente en Paraguay.</p>
+      <ul class="service-items">
+        <li>Cédula de identidad paraguaya</li>
+        <li>RUC / RUE tributario</li>
+        <li>Habilitación comercial municipal</li>
+        <li>Apostilla y legalización de documentos</li>
+      </ul>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-num">04</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+      </div>
+      <h3 class="service-title">Residencia e Inmigración</h3>
+      <p class="service-desc">Guiamos a extranjeros en todos los pasos del proceso migratorio: residencia temporal, permanente y naturalización.</p>
+      <ul class="service-items">
+        <li>Residencia temporal y permanente</li>
+        <li>Visa de inversor</li>
+        <li>Reunificación familiar</li>
+        <li>Naturalización paraguaya</li>
+      </ul>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-num">05</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-2M5 21H3m2 0h2M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 00-1-1h-2a1 1 0 00-1 1v5m4 0H9"/></svg>
+      </div>
+      <h3 class="service-title">Constitución de Empresas</h3>
+      <p class="service-desc">Apertura de sociedades en Paraguay con toda la asesoría legal, contable y fiscal necesaria para comenzar a operar.</p>
+      <ul class="service-items">
+        <li>S.R.L. y S.A.</li>
+        <li>Empresas unipersonales</li>
+        <li>Filiales de empresas extranjeras</li>
+        <li>Gestión bancaria inicial</li>
+      </ul>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-num">06</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+      </div>
+      <h3 class="service-title">Asesoría Financiera</h3>
+      <p class="service-desc">Planificación financiera y tributaria para optimizar la operación de su empresa o inversión en Paraguay.</p>
+      <ul class="service-items">
+        <li>Planificación fiscal internacional</li>
+        <li>Apertura de cuentas bancarias</li>
+        <li>Gestión de nómina y BPS</li>
+        <li>Asesoría en inversiones locales</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="nosotros">
+  <div class="why">
+    <div class="why-visual reveal">
+      <div class="why-main-card">
+        <div class="why-flag-large">
+          <div></div><div></div><div></div>
+        </div>
+        <p class="why-quote">"Navegamos el sistema paraguayo para que tu camino sea directo, seguro y sin sorpresas."</p>
+        <div class="why-quote-attr">— MC Asesorías · Ciudad del Este, PY</div>
+        <div class="why-badges">
+          <div class="why-badge">
+            <div class="why-badge-num">100%</div>
+            <div class="why-badge-label">Legal & Oficial</div>
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">3</div>
+            <div class="why-badge-label">Idiomas</div>
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">48h</div>
+            <div class="why-badge-label">Respuesta máx.</div>
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">10+</div>
+            <div class="why-badge-label">Años activos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-content">
+      <div class="section-tag reveal">¿Por qué elegirnos?</div>
+      <h2 class="section-title reveal reveal-delay-1">Experiencia que<br><em>marca la diferencia.</em></h2>
+      <ul class="why-list">
+        <li class="why-item reveal reveal-delay-1">
+          <div class="why-item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <div class="why-item-title">Especialistas en extranjeros</div>
+            <p class="why-item-text">Entendemos los desafíos que enfrenta quien llega a Paraguay desde el exterior. Hablamos tu idioma y conocemos tu situación.</p>
+          </div>
+        </li>
+        <li class="why-item reveal reveal-delay-2">
+          <div class="why-item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <div>
+            <div class="why-item-title">100% legal y transparente</div>
+            <p class="why-item-text">Todos los trámites se realizan por los canales oficiales. Sin atajos irregulares. Tu tranquilidad y legalidad son nuestra prioridad.</p>
+          </div>
+        </li>
+        <li class="why-item reveal reveal-delay-3">
+          <div class="why-item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <div class="why-item-title">Atención personalizada</div>
+            <p class="why-item-text">No somos un call center. Tenés un asesor dedicado que conoce tu caso y está disponible para responder tus consultas.</p>
+          </div>
+        </li>
+        <li class="why-item reveal reveal-delay-4">
+          <div class="why-item-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div>
+            <div class="why-item-title">Resultados rápidos y eficientes</div>
+            <p class="why-item-text">Conocemos los tiempos y procedimientos internos de cada organismo. Gestionamos todo para minimizar demoras.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="proceso">
+  <div class="process-header">
+    <div>
+      <div class="section-tag reveal">Cómo trabajamos</div>
+      <h2 class="section-title reveal reveal-delay-1">Un proceso<br><em>simple y claro.</em></h2>
+    </div>
+    <p style="color: var(--white-dim); font-size: 0.95rem; line-height: 1.75; font-weight: 300;" class="reveal reveal-delay-2">
+      Desde la primera consulta hasta la resolución final, te acompañamos en cada paso con comunicación clara y actualizaciones constantes.
+    </p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-circle">01</div>
+      <div class="step-title">Consulta Inicial</div>
+      <p class="step-desc">Analizamos tu situación y definimos qué necesitás para operar o residir en Paraguay.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-1">
+      <div class="step-circle">02</div>
+      <div class="step-title">Plan de Acción</div>
+      <p class="step-desc">Elaboramos una hoja de ruta con tiempos, documentos necesarios y costos estimados.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-2">
+      <div class="step-circle">03</div>
+      <div class="step-title">Gestión Activa</div>
+      <p class="step-desc">Nos encargamos de toda la presentación ante los organismos competentes.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-3">
+      <div class="step-circle">04</div>
+      <div class="step-title">Entrega y Seguimiento</div>
+      <p class="step-desc">Recibís tus documentos y te brindamos soporte continuo ante cualquier novedad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto">
+  <div class="contact">
+    <div class="contact-info reveal">
+      <div class="section-tag">Contacto</div>
+      <h2 class="section-title">Hablemos de<br><em>tu situación.</em></h2>
+      <p style="color: var(--white-dim); font-size: 0.95rem; line-height: 1.75; font-weight: 300; margin-bottom: 2.5rem;">
+        La primera consulta es gratuita. Contanos brevemente tu caso y te respondemos en menos de 48 horas.
+      </p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Ubicación</div>
+          <div class="contact-detail-value">Ciudad del Este, Alto Paraná, Paraguay</div>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Teléfono / WhatsApp</div>
+          <div class="contact-detail-value">+595 9XX XXX XXX</div>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Correo electrónico</div>
+          <div class="contact-detail-value">contacto@mcasesorias.com.py</div>
+        </div>
+      </div>
+
+      <div class="contact-languages">
+        <div class="lang-label">Atendemos en</div>
+        <div class="lang-flags">
+          <div class="lang-chip"><span class="flag">🇵🇾</span> Español</div>
+          <div class="lang-chip"><span class="flag">🇧🇷</span> Português</div>
+          <div class="lang-chip"><span class="flag">🇺🇸</span> English</div>
+          <div class="lang-chip"><span class="flag">🇨🇳</span> 中文</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-group">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" class="form-input" placeholder="Ej: Juan García">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">WhatsApp</label>
+          <input type="tel" class="form-input" placeholder="+XX XXXXXXXXX">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Nacionalidad</label>
+        <input type="text" class="form-input" placeholder="Ej: Brasileño, Argentino, Chino...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Servicio de interés</label>
+        <select class="form-select">
+          <option value="" disabled selected>Seleccioná un servicio</option>
+          <option>Contabilidad General</option>
+          <option>Trámites Aduaneros</option>
+          <option>Documentación / RUC</option>
+          <option>Residencia e Inmigración</option>
+          <option>Constitución de Empresa</option>
+          <option>Asesoría Financiera</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Contanos brevemente tu situación</label>
+        <textarea class="form-textarea" placeholder="Describí tu consulta o necesidad..."></textarea>
+      </div>
+      <button type="button" class="form-submit" onclick="this.innerHTML='✓ &nbsp;Mensaje Enviado!'; this.style.background='#4CAF50'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Enviar Consulta Gratuita
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="mc">MC Asesorías</div>
+    <div class="tagline">Ciudad del Este · Paraguay</div>
+  </div>
+  <div class="footer-copy">
+    © 2025 MC Asesorías. Todos los derechos reservados.<br>
+    <span style="opacity:0.6">Contabilidad · Aduana · Documentación · Residencia</span>
+  </div>
+  <div class="footer-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#">Política de Privacidad</a>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/595900000000" target="_blank" style="
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 56px; height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  z-index: 200;
+  transition: all 0.3s;
+  text-decoration: none;
+" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
