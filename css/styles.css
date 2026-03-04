@@ -1061,7 +1061,7 @@
     .process-steps { grid-template-columns: repeat(2, 1fr); }
     .process-steps::before { display: none; }
     .contact { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
+    .nav-links li:not(.lang-item) { display: none; }
     .form-row { grid-template-columns: 1fr; }
     section { padding: 4rem 6vw; }
     footer { flex-direction: column; text-align: center; }
